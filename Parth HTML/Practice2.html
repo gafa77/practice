@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Calling VBScript Function</title>
+    <script language="vbscript" type="text/vbscript">
+        sub calculate()
+            dim m,y,age
+             m=cint(document.f1.t3.value)
+             y=document.f1.t4.value
+             age=year(now)-y 
+            if m<month(now) then
+                msgbox("ur age is"& age & "years")
+            else
+                msgbox("urr age is"& age-1 &"years")
+            end if
+        end sub
+    </script>
+</head>
+<body>
+    <h1>HTML Calling VBScript Function</h1>
+    <form name="f1">
+        <h2>enter name: <input type="text" name="t1"><br>
+            enter dob:<input type="text" name="t2">
+            <input type="text" name="t3">
+            <input type="text" name="t4"><br>
+            <input type="button">
+            <button onclick="vbscript:calculate()">Click Me</button>
+        </h2>
+    </form>
+</body>
+</html>

@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html class="account-layout">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2D3943"/>
+
+    <title>Servers | Aternos | Free Minecraft Server</title>
+
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <script src="/panel/js/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/panel/js/lang.php?v=13052020"></script>
+
+    <script>
+        const LANGUAGE_VARIABLES = {"account":"Account","access-denied":"Access denied.","ad-error":"Sorry, an error occured!","service-free":"Our service is 100% free for everyone.","pay-ads":"We pay for your servers using advertisements.","adblock-turn-off-short":"Please turn off your adblocker.","adblock-turn-off":"We would really appreciate if you could turn off your adblocker.","adblock-skip":"Continue with adblocker anyway","close-bye-bye":"We have deactivated your account. It will be removed automatically in 7 days.","close-confirm":"Please enter your password to confirm the account deletion:","close-leave-feedback":"Leave us some feedback","close-question":"Are you sure, that you want to close your account? We will delete your entire account and your server files forever.","create-your-server":"Create your server","create-your-account":"Create your account","connect":"Connect","files":"Files","files-no-description":"No description available","files-not-found":"File not found","files-plugins":"Plugins","files-save":"Save","files-want-delete":"Are you sure that you want to delete this?","files-want-delete-multiple":"Are you sure that you want to delete these?","front-backups-headline":"Automatic Backups","front-backups-text":"We always keep a backup of your server, just in case you need it.","front-built-played-headline":"Built to be played","front-built-played-text":"We offer you servers that you can actually play and have fun on. Lots of fun. No unnecessary restrictions to steal your time and money.","front-custom-worlds-headline":"Custom Worlds","front-custom-worlds-text":"Adventure maps, parkour or the latest minigame. You can upload any world you want to play.","front-customizable-headline":"Fully Customizable","front-customizable-text":"Adjust everything on your server the way you like it and make it your game.","front-ddos-headline":"DDOS Protected","front-ddos-text":"Your Minecraft server is fully DDOS protected for free to keep you safe from attacks.","front-developer":"Developer","front-easy-headline":"Easy to use","front-easy-text":"We don't know, why it could be complicated to own a Minecraft server. At Aternos it is just as easy as pressing a button.","front-engineer":"Engineer","front-enjoy":"Enjoy","front-facts":"Facts","front-features":"Features","front-for-free-headline":"For Free","front-for-free-text":"We are free, and we will always be free for everyone at any time. There is no possibility to pay for anything.","front-forever":"Forever","front-free":"Free","front-get-help":"Get Help","front-get-yours":"Get yours now","front-launch-server":"Launch my server now","front-minecraft-servers":"Minecraft servers","front-mods-plugins-headline":"Mods & Plugins","front-mods-plugins-text":"Vanilla is too boring for you? Add plugins, play with your favourite mods or use one of many preconfigured modpacks for your very own experience.","front-pay-nothing":"Pay nothing now","front-play":"Play","front-play-now":"Play now","front-players-day":"Players every day","front-press-button":"Press a button now","front-sign-up":"Sign up","front-start":"Start","front-starts":"Starts","front-support-headline":"Excellent Support","front-support-text":"If you need help, we are here to help.","front-supporter":"Supporter","front-team":"Team","front-users":"Users","front-waiting-for":"What are you waiting for?","front-what":"What?","front-your-server-headline":"Your personal Minecraft server","front-your-server-text":"We give you your very own personal Minecraft server, where you can play on with your friends all day and all night.","global-cancel":"Cancel","global-change-mail":"Change email","global-change-pass":"Change password","global-email":"Email","global-email-exists":"Email address already exists!","global-email-format":"Wrong email address format!","global-email-pass":"We have sent you an email to change your password!","global-forgot-pass":"Forgot Password?","global-ip-exists":"This IP already exists!","global-ip-longer":"IP cannot be longer than {{count}} characters","global-ip-not-valid":"This IP contains characters which are not valid!","global-ip-shorter":"IP must be longer than {{count}} characters","global-language":"Language","global-login":"Login","global-login-with":"Login with","global-logout":"Logout","global-name-longer":"Username cannot be longer than {{count}} characters","global-name-shorter":"Username must be longer than {{count}} characters","global-need-activation":"Your account is not active!","global-newpw":"New Password","global-oldpw":"Old Password","global-password":"Password","global-password-missmatch":"Passwords don't match","global-password-shorter":"Password must be longer than {{count}} characters","global-password-wrong":"You used a wrong password!","global-recaptcha-failed":"Please solve the captcha to proceed.","global-redeem-key":"Redeem key","global-retpassword":"Retype Password","global-server":"Server","global-signup":"Sign up","global-uoe-not-found":"Username or Email not found!","global-user-exists":"Username already exists!","global-username":"Username","global-username-not-exists":"This username doesn't exist!","use-socialmedia-login":"Please click on the \"{{button-label}}\" button below to log in.","global-username-or-email":"Username or Email","help":"Help","key-redeem":"Redeem","key-invalid":"Your key was already redeemed or is invalid!","kick":"Kick","ban":"Ban","kill":"Kill","kill-offline-player-warning":"{{player}} is offline. If you kill them now, they will lose their inventory. Are you sure that you want to do this?","teleport":"Teleport","menu-home":"Home","meta-description":"Your very own Minecraft server, the only one that stays free forever.","notification-allow":"Please allow us to send you notifications so we can notify you when your server is online.","notification-queue-ready-body":"Please confirm that you are still ready by clicking on the confirmation, so your server can start!","notification-server-online":"Your server is online, join now!","okay":"Okay","close":"Close","or":"Or","others":"Others","page-404":"404 - Page not found","page-close":"Close account","page-go":"Login or Sign up","page-impressum":"Imprint","partner":"Partners","pending-confirm-now":"Confirm now!","players":"Players","online-players":"Online Players","offline-players":"Offline Players","server-accept-eula":"Yes, I accept the EULA.","server-achievments":"Achievements","server-adventure":"Adventure","server-animals":"Animals","server-backup":"Backup","server-backup-no":"No backup found!","server-backup-question":"Do you want to restore this backup and replace your current server files?","server-backup-restore":"Restore Backup","server-command-block":"Commandblocks","server-console":"Console","server-cracked":"Cracked","server-creative":"Creative","server-difficulty":"Difficulty","server-download":"Download","server-easy":"Easy","server-eula":"EULA","server-eula-question":"Do you accept the Minecraft EULA?","server-file":"Our storage system is currently unavailable. You cannot start your server now. Please try again later.","server-fly":"Fly","server-gamemode":"Gamemode","server-generate":"Generate","server-generate-world":"Generate world","server-hard":"Hard","server-hardcore":"Hardcore","server-headstart":"Headstart","server-install":"Install","server-ip":"IP","server-line-status":"Waiting in queue","server-loading":"Loading ...","server-log":"Log","server-minecraft-version":"Minecraft Version","server-monster":"Monster","server-nether":"Nether","server-no":"No","server-normal":"Normal","server-offline":"Offline","server-online":"Online","server-ops":"OPs","server-options":"Options","server-other-ip":"Dyn IP","server-peaceful":"Peaceful","server-port":"Port","server-pvp":"PVP","server-reinstall":"Reinstall","server-reinstall-text":"When you reinstall your server all your settings and your world will be deleted. Do you really want to reinstall your server?","server-restart":"Restart","server-seed":"Seed","server-slots":"Slots","server-software":"Software","server-srestarting":"Restarting ...","server-sstarting":"Starting ...","server-sstopping":"Stopping ...","server-start":"Start","server-stop":"Stop","server-survival":"Survival","server-type":"Worldtype","server-version":"Version","server-whitelist":"Whitelist","server-allowlist":"Allowlist","server-world-deleted":"Your current world will be deleted!","server-wrongversion":"The selected server software doesn't exist! Please install another server software and try to start again!","server-yes":"Yes","server-yesre":"Yes, Reinstall","spawn-protection":"Spawn Protection","spectator":"Spectator","title":"Free Minecraft Server","upload-no-world":"No world was found in your zip archive!","upload-no-zip":"You are only allowed to upload .zip files!","upload-select-world":"Please select a world:","upload-too-big":"You are not allowed to upload files bigger than {{limit}}MB!","user-not-valid":"Your username contains characters which are not valid!","user-wrong-pw":"Wrong password!","using-adblock":"You are using an adblocker!","view-spam-folder":"It may take some time until the e-mail arrives in your mail account. Please also make sure to check your spam folder.","worlds":"Worlds","upload":"Upload","delete":"Delete","generator":"Generator","no-plugins-found":"No plugins found.","no-mods-found":"No mods found.","folder-empty":"This folder is empty.","upload-offline":"Uploading worlds is only possible when the server is offline.","reactivate":"Reactivate","share":"Share","empty":"Empty","choose-username":"Choose a username","can-change-later":"You can also change this later.","next":"Next","back":"Back","sign-in-google":"Sign in with Google","sign-in-facebook":"Sign in with Facebook","welcome-to-my-server":"Welcome to my server!","welcome-to-server-of":"Welcome to the server of {{username}}!","welcome-to-aternos":"Welcome to Aternos","send":"Send","welcome-back-reactivated":"Welcome back, your account was reactivated!","account-already-used":"This account is already used.","what-do-now":"What do you want to do now?","start-your-server":"Start your server","install-software":"Install a server software","upload-world":"Upload a world","configure-server":"Configure your server","visit-help-center":"Visit our help center","follow-on-twitter":"Follow us on Twitter","join-discord":"Join our Discord","join-teamspeak":"Join our Teamspeak","watch-tutorials":"Watch our tutorials","all-tutorials":"All tutorials","two-factor-auth":"Two-factor authentication","enable-two-factor":"Enable 2FA","disable-two-factor":"Disable 2FA","code":"Code","invalid-code":"Invalid two-factor authentication code.","scan-two-factor-qr":"Scan this QR-Code with your Two-factor app:","two-factor-warning":"Make sure to save your backup code!","dependencies":"Dependencies","dataprotection":"Privacy Policy","backups":"Backups","create-backup":"Create backup","backup-name":"Backup name","backups-available":"Available backups","backups-used-storage":"Used Google Drive storage","backups-auto":"Automatic backup","backups-connect-drive":"Please connect your Google account to save backups in Google Drive.","offline-only":"This is only possible when your server is offline.","online-only":"This is only possible when your server is online.","backups-auto-toggle":"Automatic backups","backups-unnamed":"Unnamed backup","backups-connect":"Connect","resource-pack-url":"Resource pack URL","resource-pack-sha1":"Resource pack SHA-1","server-too-big":"Your server is currently {{size}} in size. The maximum allowed size is {{max-size}}.","privacy-consent":"I agree that my personal data is stored and processed according to the {{link-start}}privacy policy{{link-end}}.","force-upgrade":"Force upgrade","reactivate-your-account":"This email address is used by an account that was closed and will be deleted in the next 7 days. You can reactivate this account by clicking on the link in the email we've sent to you after closing the account. (Please also check your spam folder)","backup-code":"Backup code","mods":"Mods","for-plugins":"For plugins","for-mods":"For mods","no-versions-found":"No compatible versions found.","versions":"Versions","required-dependencies":"Required dependencies","address":"Address","tutorials":"Tutorials","loading-tutorials":"Loading tutorials","friend-access":"Friend Access","force-gamemode":"Force Gamemode","allow-cheats":"Allow Cheats","hide-online-players":"Hide online players","max-chained-neighbor-updates":"Max chained neighbor updates","enforce-secure-profile":"Enforce secure profile","permissions":"Permissions","username-not-found":"Username not found!","by-friend":"by {{username}}","access":"Access","share-access":"Share access","friend-access-denied-text":"You don't have the permission to view this page. Ask {{username}} to allow you access to this page.","backups-drive-full":"There is not enough free space left in Google Drive","backups-not-ready":"There is already a backup being created\/restored right now","aternos-username":"Aternos Username","copy":"Copy","detected-problems":"Detected problems","line":"Line","possible-solutions":"Possible solutions","solve":"Solve","crashed":"Crashed","saving":"Saving ...","view-log":"View log","gb-ram":"GB RAM","players-online":"Players online","timezone":"Timezone","banned-players":"Banned players","banned-ips":"Banned IPs","server-must-online-offline":"The server must be either online or offline.","player-must-online-or-server-offline":"The player must be online or the server must be offline.","player-must-online":"The player must be online.","player-must-offline":"The player must be offline.","java-edition":"Java Edition","bedrock-edition":"Bedrock Edition (Win10\/MCPE)","name":"Name","erase-cache":"Erase cache","company":"Company","use-socialmedia-reset":"Your account was registered using a {{platform}} account. Click the \"{{button-label}}\" button on the login page to log in.","change":"Change","add":"Add","close-reinstall-question":"Do you only want to delete the server files to reset your server? You can reinstall your server in the options.","reactivate-question":"Your account is currently closed and will be deleted soon. Do you want to reactivate your account?","feature-unsupported":"This feature is not supported by your browser.","invalid-world":"The selected file\/folder is not a valid world.","plugins-mods":"Plugins\/Mods","no-plugins-mods-found":"No plugins or mods found.","plugin":"Plugin","mod":"Mod","for-plugins-mods":"For plugins\/mods","folder":"Folder","zip-archive":"ZIP Archive","legacy":"Legacy","leave-upload":"Leaving this page cancels the current upload.","upload-action-unavailable":"This action is not available while uploading a world.","optional":"optional","no-connected-email":"Your password can't be reset because your account is not connected to an email address.","add-to-my-servers":"Add to my servers","share-url":"Share URL","resourcepack-required":"Resource pack required","pending":"Pending","pending-cancel-warn":"Cancelling the current status of your server will result in the loss of all changes from your last session.","yes-cancel":"Yes, cancel.","file-access-not-possible":"This is currently not possible.","backups-delete":"Are you sure you want to delete this backup?","cannot-be-undone":"This cannot be undone!","app-blocked":"The app you are currently using is not authorized by Aternos and might be abusing our service or stealing your data and has therefore been blocked. Please use Aternos in your browser instead.","preparing":"Preparing ...","world-name":"World name","random":"Random","ad":"Advertisement","upload-no-folders":"You cannot upload folders here.","upload-no-files":"You cannot upload files here.","upload-invalid-type":"You cannot upload {{extension}} files here.","upload-allowed-types":"Allowed file types: {{extensions}}","upload-replace-file":"'{{name}}' already exists, replace?","upload-invalid-zip":"'{{name}}' is not a valid ZIP-Archive.","upload-invalid-file":"You cannot upload this file here.","change-username":"Change username","domains":"Domains","nameservers":"Nameservers","nameservers-info":"Create DNS nameserver (NS) records for your domain or subdomain with the following nameservers:","invalid-domain":"Invalid domain.","used-domain":"This domain is already used by another server.","incorrect-nameservers":"The nameserver (NS) records for your domain are not correct. If you've just changed them, it might take up to 24 hours for the changes to apply.","max-domains":"You can only add up to {{limit}} domains to your server.","servers":"Servers","create":"Create","create-server":"Create a server","cant-create-more-servers":"You can't create more servers.","delete-server-confirmation":"Do you really want to delete this server?","delete-server-warn":"All files and settings will be permanently deleted.","credit":"credit","credits":"credits","hour":"hour","hours":"hours","hour-short":"h","buy-credits":"Buy credits","refund":"Refund","refund-confirmation":"Do you really want to refund this payment?","email-not-verified":"Your email address is not verified","resend-verification":"Resend verification","email-verification":"Email verification","email-verified":"You successfully verified your email address.","payments":"Payments","transactions":"Transactions","start-when-player-joins":"Start when {{player-type}} joins","start-any-player":"any player","start-whitelisted-player":"a whitelisted player","start-op":"an OP","stop-after-minutes":"Stop after {{minutes}} minutes without players","agree-terms":"I agree to the {{link-start}}terms of service{{link-end}}","terms-of-service":"Terms of service","paid":"Paid","processing":"Processing","refunded":"Refunded","for-payment-at":"For payment at {{endtime}}","for-refund-at":"For refund at {{endtime}}","for-server-usage":"For {{ram}} of server ram usage from {{starttime}} to {{endtime}}","for-server-storage":"For 30 days of server storage from {{starttime}} to {{endtime}}","for-blocked-stop":"Compensation for blocked stop to avoid system overload from {{starttime}} to {{endtime}}","for-restart":"Compensation for automated restart to adjust system load from {{starttime}} to {{endtime}}","welcome-to-exaroton":"Welcome to exaroton","exaroton-title":"High-end on demand game servers","exaroton-username":"exaroton Username","not-enough-credits":"Not enough credits, you need at least {{credits}} credits to start this server.","idle-timeout":"Idle timeout","view-distance":"View distance","unlink-socialmedia":"Unlink {{platform}}","unlink-socialmedia-warning":"This will unlink your {{platform}} account forever. Then you can only login with your username and a new password that you choose here.","unlink":"Unlink","unlink-facebook-discontinued":"Facebook support is discontinued. Please convert your account to continue using Aternos.","villagers":"Villagers","dont-pay-sleep":"Don't pay when you sleep.","dont-pay-eat":"Don't pay when you eat.","dont-pay-school":"Don't pay when you are at school.","dont-pay-work":"Don't pay when you are at work.","dont-pay-play":"Don't pay when you don't play.","only-pay-to-play":"Only pay to play.","with-game-servers":"With our high-end on demand game servers.","get-started":"Get started","fully-ddos-protected-safe":"Your game server is fully DDOS protected to keep you safe from attacks.","automatic-backups-drive":"You can create backups automatically on your Google Drive.","games":"Games","per-second-billing-hundredth":"Per second billing, rounded up to the next hundredth of a credit.","up-to-credits-days":"Up to {{credits}} \/ {{days}} days","save-your-server":"We save your server for you while you are not playing.","used-credits-deducted":"Used credits are deducted from the storage costs.","up-to-storage":"Up to {{storage}} can be stored per server.","storage":"Storage","pricing":"Pricing","by-aternos":"by Aternos","notification-allow-online":"Please allow us to send you notifications so we can notify you when your server is online.","need-more":"Need more?","try":"Try","api-token":"API token","api-token-revoke":"Revoke","confirm-generic":"Are you sure that you want to do this?","environment":"Environment","addon-request-invalid-url":"The URL you entered is not a valid suggestion.","addon-request-already-suggested":"This was already suggested and is being reviewed.","addon-request-already-added":"This plugin\/mod is already available for {{software}}.","addon-request-modpack-already-added":"This modpack is already available {{link-start}} in the Modpacks section{{link-end}}.","addon-request-unpopular":"This is not popular enough.","addon-request-outdated":"This is outdated or no longer receives updates.","addon-request-technical":"This can't be added for technical reasons.","addon-request-external-website":"This can only be downloaded via an external website.","addon-request-paid":"This cannot be downloaded for free.","addon-request-client-mod":"This mod was only made for the Minecraft client and not for servers.","addon-request-server-files":"The author doesn't provide up-to-date server files.","addon-request-disallows-project-distribution":"The author of this project does not allow {{link-start}}project distribution{{link-end}}.","addon-request-too-heavy":"This project requires lots of resources and we can't ensure a reasonable experience while playing it.","addon-request-submitted":"Your suggestion has been submitted and is waiting for manual review. This process might take a few days.","addon-request-accepted":"Your suggestion has been accepted.","addon-request-denied":"Your suggestion has been denied: {{reason}}","denied":"Denied","accepted":"Accepted","addon-request-enter-url":"Enter the URL of a {{link-start}}supported website{{link-end}} here:","your-addon-requests":"Your suggestions","suggest":"Suggest","suggest-title":"Suggestions","suggest-button-modpacks":"Suggest a modpack","suggest-button-mod-plugin":"Suggest a mod\/plugin","broadcast-console-to-ops":"Broadcast console to OPs","function-permission-level":"Function permission level","op-permission-level":"OP permission level","generate-structures":"Generate structures","max-build-height":"Max build height","enforce-whitelist":"Enforce whitelist","entity-broadcast-range-percentage":"Entity broadcast range","tick-distance":"Tick distance","default-player-permission-level":"Default player permission level","server-authoritative-movement":"Authoritative movement","correct-player-movement":"Correct movement","max-world-size":"Max world size","operator":"Operator","member":"Member","visitor":"Visitor","no-email-warning":"Please consider adding an email address to your account. Without an email address you cannot reset your password and will lose access to your account if you forget the password.","custom-software-invalid":"This is not a valid server software.","executable":"Executable","included-files":"Included files","custom-version":"Custom ({{version}})","addon-request-invalid":"This is not a valid suggestion.","addon-request-incompatible":"This plugin\/mod is not compatible with Minecraft servers.","file-create-invalid":"You cannot create this file here.","only-after-payment":"This is only possible after you have purchased your first credits.","world-optimize":"Optimize","support-token":"Support token","support-token-dont-share":"Don't share this support token with anybody except the official {{brand}} support.","use-own-credits":"Use my own credits","software-auto-update":"We update this software automatically for you.","under-review":"Under review","discord-account":"Discord account","account-connect":"Connect","add-bot":"Add bot","server-authoritative-block-breaking":"Authoritative block breaking","file-syntax-errors":"This file contains syntax errors.","file-syntax-errors-warning":"Saving it will result in your server crashing or not working as expected.","save-anyway":"Save anyway","vanilla-description":"For the original survival multiplayer experience.","plugins-description":"Expand your SMP experience with plugins or create your own minigame server.","modded-description":"Use one of our preconfigured modpacks or create your own modded SMP.","modded-plugins-description":"Combine the power of mods and plugins to get the best of both worlds.","bedrock-vanilla-description":"The official server software with full survival support for your own SMP experience.","bedrock-plugins-description":"Use this server software to create your own experience using plugins.","smp-title":"Create your free SMP","smp-description":"Your own survival multiplayer experience, free forever.","domains-title":"Custom domains","domains-description":"Use your own domain to connect to your server.","access-title":"Share access","access-description":"Don't run your server alone. Share access with your friends and manage your server together.","slots-title":"Unlimited slots","slots-description":"Play with as many friends as you want without unnecessary slot limitations.","addons-title":"Add-Ons & Datapacks","addons-description":"Expand your vanilla experience with our easy drag and drop upload for Bedrock add-ons and datapacks.","console-title":"Real-time console","console-description":"Managing your server couldn't be easier with our real-time live console.","config-forge-support":"Forge support","config-log-commands":"Log commands","config-log-pings":"Log pings","auto-start-whitelist":"AutoStart whitelist","proxy-edition":"Proxy","startup-arguments":"Startup arguments","input-invalid":"Your input seems to be invalid.","input-invalid-warning":"Saving it can result in your server crashing or not working as expected.","minute":"minute","minutes":"minutes","day":"day","days":"days","weeks":"weeks","months":"months","last-day":"Last day","last-week":"Last week","last-month":"Last month","less-than-a-minute":"Less than a minute","email-account-subject":"Your {{brand}} account","email-greeting":"Hi,","email-greeting-name":"Hi {{username}},","email-wish-fun":"We wish you lots of fun on {{brand}}!","email-your-team":"Your {{brand}} Team","email-footer":"This email was sent to you, because your email address was used to create an account for {{website}}. We do not and we will never use your email address to send any kind of automated mass emails. If you wish to delete your email address from our database, you can close your account after logging in here: {{link}}","email-footer-unsubscribe":"You can unsubscribe from this kind of emails in your {{link-start}}account settings{{link-end}}.","email-password-reset-title":"Your {{brand}} password","email-password-reset-1":"We send you this e-mail because you forgot your password on {{website}}.","email-password-reset-2":"To secure your account, everybody who was logged in will be logged out.","email-password-reset-3":"Keep your password secret and tell it to nobody, not even your friends. Use a {{link-start}}strong password{{link-end}} to make sure your account is protected.","email-password-reset-link":"Click on this link to set a new password: ","email-password-reset-multiple":"Your e-mail address is associated with multiple accounts. Please choose the one you want to reset the password for.","email-verify-title":"Verify your email address","email-verify-1":"We send you this email because you created an account on {{website}}.","email-verify-link":"Click this link to verify your email address: ","email-verify-2":"If you did not create the account, you can ignore this email.","player-forward-none":"None","player-forward-legacy":"Legacy","player-forward-bungeeguard":"BungeeGuard","player-forward-modern":"Modern","config-player-info-forwarding-mode":"Player forwarding mode","config-player-info-forwarding-secret":"Player forwarding secret","config-ip-forward":"IP forwarding","software-read-guide":"Please read our setup guide for more information.","email-retention-title":"{{brand}} server deletion","email-retention-1":"We send you this email, because you haven't used your server {{server}} in a while.","email-retention-2":"To save storage and to prevent our storage system from being overloaded with data from users who have left our service, we are forced to remove servers that haven't been used in a long time. You can read more about this process here: {{link}}","email-retention-options":"There are multiple options for you to make sure your server is safe:","email-retention-option-1-title":"Start your server","email-retention-option-1-description":"Servers that are actively used are never deleted.","email-retention-option-2-title":"Create a backup","email-retention-option-2-description":"Backups are saved in your Google Drive account and therefore not affected if your server is deleted.","email-retention-option-3-title":"Download your world","email-retention-option-3-description":"Having a local backup of your world ensures that you always have access to it.","email-retention-fee":"Unused servers on {{brand}} have a storage fee of {{amount}} credits\/month, and your account does not have enough credits to pay this fee.","email-retention-option-credits-title":"Purchase more credits","email-retention-option-credits-description":"As long as you have enough credits to pay the monthly storage fee, your server won't be deleted.","more-information-link":"More information can be found here: {{link}}","notification-server-deletion":"Server deletion","email-notifications":"Email notifications","email-retention-take-action":"If no action is taken, your server will be removed in {{days}} days.","gamerules":"Gamerules","experiments":"Experiments","simulation-distance":"Simulation distance","player-food-level":"Food level","player-health":"Health","player-invulnerable":"Invulnerable","player-score":"Score","player-xp-level":"XP level","player-position":"Position","backups-unlink-drive":"Are you sure you want to unlink your Google Drive account?","dimension":"Dimension","player-fly-speed":"Flying speed","player-walk-speed":"Walking speed","hello-user":"Hello {{username}}!","trying-to-connect":"You are trying to connect to {{address}}.","messages":"Messages","server-auto-start-success-title":"Successful automatic start","server-auto-start-success":"This server was {{start-highlight}}automatically started{{end-highlight}} and will be online soon.","server-auto-start-forbidden-title":"Forbidden automatic start","server-auto-start-forbidden":"You are not allowed to start this server.","uploading":"Uploading...","resource-pack-size":"Resource pack size","resource-pack":"Resource pack","resource-pack-invalid":"Invalid resource pack.","resource-pack-prompt":"Resource pack prompt","invalid-words-phrases":"Invalid words or phrases","content-logging":"Content logging","chat-preview":"Chat preview","recommended":"Recommended","server-telemetry":"Server telemetry","crash-report-detected":"Crash report detected","view":"View","entity-delete":"Are you sure that you want to delete this entity?","version-not-supported":"This version is not supported","file-corrupted":"Region file is corrupted or does not exist","chat-restriction":"Chat restriction","player-interaction":"Player interaction","dropped":"Dropped","disabled":"Disabled","show-details":"Show details","player-details":"Player details","last-time-refreshed":"Refreshed {{time}} ago","refresh":"Refresh","player-control":"Control","whitelisted":"Whitelisted","banned":"Banned","health-and-experience":"Health and experience","level-x":"Level {{level}}","heal":"Heal","starve":"Starve","feed":"Feed","player-online":"Online","player-offline":"Offline","player-information":"Information","current-position":"Current position","last-death":"Last death location","respawn-location":"Respawn location","teleport-back":"Teleport back","teleport-player":"Teleport {{player}}","teleport-dimension-label":"Dimension","teleport-dimension-description":"Dimension to teleport to","teleport-coordinate-description":"{{coordinate}} coordinate to teleport to","player-uuid-not-found":"Could not find a player with the uuid {{uuid}} on this server.","player-name-not-found":"Could not find a player with the name {{name}} on this server.","player-file-invalid":"Could not read player data.","player-inventory":"Inventory","player-statistics":"Statistics","playtime":"Playtime","player-kills":"Player Kills","deaths-by-player":"Deaths by player","player-deaths":"Deaths","kdr":"KDR","distance-travelled":"Distance travelled (in blocks)","blocks-broken":"Blocks broken","items-used":"Items used","entities-killed":"Entities killed","total":"Total","show-all":"Show all","show-less":"Show less","no-data":"No data","addon-request-limit":"You can only have up to {{number}} active suggestions.","datapacks":"Datapacks","enabled-datapacks":"Enabled datapacks","enabled-features":"Enabled features","disabled-datapacks":"Disabled datapacks","buy":"Buy","credits-title":"Credits","no-payments":"No payments found","file-already-exists":"A file with that name already exists.","editor-find":"Find","editor-replace":"Replace","editor-replace-all":"Replace all","editor-next":"Next","editor-previous":"Previous","editor-all":"All","editor-match-case":"Match case","editor-regexp":"Regular expression","editor-by-word":"By word","may-corrupt-world":"This may corrupt your world in some cases.","upload-close-game":"Make sure your game is closed during the upload.","feature-unsupported-in-software":"This feature is not supported by the software used.","new":"New","command-execute-error":"The command could not be executed on the server.","select-server":"Select a server","import-server":"Import a server","importing-server-from":"Importing server from {{source}}","import-from":"Import from {{brand}}","shared-cpu-core":"{{amount}} shared CPU core","shared-cpu-cores":"{{amount}} shared CPU cores","no-servers-found":"No servers found.","open-ender-chest":"Open Ender Chest","delete-player-data":"Delete player data","content-log-console-output":"Content log console output","content-log-level":"Content log level","no-payment-method-required":"No payment method required for trial","subscription":"Subscription","drawback-of-traditional-hosting":"Drawbacks of traditional hosting pricing models","drawback-of-traditional-hosting-description":"A disadvantage of traditional hosting services is their fixed monthly pricing, which can lead to users paying for resources they don't utilize. The missing flexibility makes it impossible to modify the allocated resources to fit the users needs. This requires users to pay for more resources to cover peak usage.","drawback-of-traditional-hosting-disclaimer":"Here you can see the example usage of a gameserver on a traditional host, running all the time with a fixed amount of RAM. It\u2019s not possible to turn the server off or reduce the allocated resources to reduce cost.","our-pricing-model-adapting":"Our pricing model: Adapting to your needs","our-pricing-model-adapting-description":"Gameservers on exaroton don't have a fixed monthly price. You are only charged for the time you actually use your server. Running a server on exaroton costs 1 credit per GB of RAM per hour. For example, if you select 2 gigabytes of RAM for your server and run it for 4 hours, you would pay 8 credits.","our-pricing-model-adapting-disclaimer":"This diagram shows example usage of a gameserver on exaroton which is offline during breaks to eat or sleep. The RAM is increased temporarily to cover higher player counts during a specific session.","try-for-free":"Try for free","exaroton-meta-description":"Discover on demand Minecraft servers with exaroton.com. Our unique pricing model allows you to only pay for the time your server is active, giving you unmatched control and flexibility.","click-to-scroll":"Click to scroll","one-simple-price":"One simple price","running-without-players":"Running without players","reducing-ram-not-possible":"Reducing RAM not possible","more-information":"More information","access-software-file":"This file cannot be accessed, as it is part of the server software.","access-software-file-custom-software":"If you want to access this file, you have to use a custom server software.","credit-pools":"Credit pools","pool-deposit-transaction":"For a deposit into the credit pool '{{poolname}}' at {{endtime}}","pool-withdraw-transaction":"For a withdrawal from the credit pool '{{poolname}}' at {{endtime}}","account-not-enough-credits":"You don't have enough credits.","pool-member-remove-confirmation":"Are you sure that you want to remove '{{username}}' from the credit pool and return all credits?","delete-pool":"Delete credit pool","pool-server-remove-confirmation":"Are you sure that you want to remove the server '{{server}}' from the credit pool?","deposit-credits":"Deposit credits","withdraw-credits":"Withdraw credits","view-members":"View members","add-members":"Add members","remove-members":"Remove members","add-servers":"Add servers","remove-servers":"Remove servers","change-permissions":"Change permissions","edit":"Edit","pool-remove-confirmation":"Are you sure that you want to delete the credit pool and return all credits?","pool-leave-confirmation":"Are you sure that you want to leave the credit pool and withdraw your credits?","amount-servers":"{{amount}} servers","amount-server":"{{amount}} server","amount-members":"{{amount}} members","amount-member":"{{amount}} member","notification-pool-updates":"Credit pool updates","server-added-to-pool":"Server added to your credit pool","server-added-text":"The server {{server}} was added to your credit pool {{pool}}. It also uses your credits from that credit pool now. If you don't want that, you can always withdraw your credits from the pool.","server-removed-from-pool":"Server removed from your credit pool","server-removed-text":"The server {{server}} was removed from your credit pool {{pool}}. It no longer uses your credits from that credit pool.","pool-read-more":"You can read more about credit pools in our support article: {{article}}","credits-deposited-in-pool":"Credits deposited in your credit pool","credits-deposited-text":"The user {{user}} deposited {{amount-credits}} in your credit pool {{pool}}.","credits-total-text":"Your credit pool now has a total of {{amount-credits}}.","credits-withdrawn-from-pool":"Credits withdrawn from your credit pool","credits-withdrawn-text":"The user {{user}} withdrew {{amount-credits}} from your credit pool {{pool}}.","members":"Members","no-servers-added":"No servers added yet.","browser-is-incompatible":"Your browser is not supported. Most features will not work as expected.","browser-will-be-incompatible":"Your browser is outdated and will not be supported in the future. Some features might not work as expected.","update-browser":"Please update your browser or install a different browser.","never":"Never","ask":"Ask","always":"Always","auto-update":"Automatic updates","auto-update-question":"Do you want to update your server to version {{version}}?","maybe-later":"Maybe later","on-demand":"On demand","on-demand-description":"Make the best out of our flexible pricing by only running your server when you need it. We have some awesome features to help you manage your server on demand with ease.","start-by-joining":"Start by joining","start-by-joining-description":"You can enable automatic starts to allow players to start your server by joining in-game.","automatic-stop":"Automatic stop","automatic-stop-description":"If you turn on the automatic shutdown feature, your server will automatically stop after a configurable amount of time once the last player leaves.","discord-bot":"Discord bot","discord-bot-description":"Add our bot to your Discord community and give other members permission to start or manage your server.","api":"API","api-description":"The exaroton API allows you to build your own integrations, giving you the power to manage server starts, stops, and more with ease. Get started by reading our {{link-start}}API documentation{{link-end}}.","share-limit-reached":"This user has reached the maximum number of shared servers."};
+        const COOKIE_PREFIX = "ATERNOS";
+    </script>
+    <script type='text/javascript'>(() => /*window["AJAX_TOKEN"]=["Rt3wHOOB","qNRyfk","ZXcto0"].join('')}*/{window["AJAX_TOKEN"]=(window[["M","pa"].map(s => s.split('').reverse().join('')).join('')]["prototype"]&&window["document"]&&window[["ucod","tnem"].map(s => s.split('').reverse().join('')).join('')]["getElementById"]&&window["setTimeout"]&&window[["document"].reverse().join('')][("currentSc" + "ript")][["parentElem","ent"].join('')])?["SSsk50","HkwXMnYf","RRwDWp"].join(''):["Rt3wHOO","BqNRy","fkZXct","o0"].join('');})();</script>            <link rel="stylesheet" integrity="sha512-J5SZD4+nEWroIH4J6UF2sQ0Yih6Md/rC+sxRuaiOgOO+AfacYKrxSwi+u8Fw1xzKhTffZCxrNOkxAT34NuE8xg==" href="/assets/panel/css/panel-2794990f8fa7116a.css"/>
+            <link rel="stylesheet" integrity="sha512-N5KJKDhZHPvjAv5/9DzvBG7axOYj1wYu/WJL5Nv9Hwlx29Y1aU87ZDTpQXiubNw7hCJZiNrUPrcwexWqYNVTzw==" href="/assets/panel/css/btn-3792892838591cfb.css"/>
+            <link rel="stylesheet" integrity="sha512-QwiUwe2S9J/XzURGg0Ev7/YHHUIEYVJRfOi+6r0yxz2xxod1NFZWJq3lrA9dObo2FBn/4SGTa1XE9TSXQsnCqg==" href="/assets/panel/css/mobile-430894c1ed92f49f.css"/>
+            <link rel="stylesheet" integrity="sha512-Xzg929Ch40Ut24VHpiWxIELJAeYa8ZgOfqE8/J3wEpF9FZgnd/t5FO31bcWBReQs1JTm8mi3EMxKfP1j1c4bUg==" href="/assets/panel/css/account-5f383ddbd0a1e345.css"/>
+            <script integrity="sha512-WbA3x46q9aLaD4WwmxAK4LKE1sudXWPLVtf6njDewGm3gZoMWS8uifmbEYPV3WM5VQ4jwJG6WCDls+xYvygD/w==" src="/assets/panel/js/dist/elements-59b037c78eaaf5a2.js"></script>
+            <script integrity="sha512-n9g3sExAQs2tLplDwxJf1Dldky41GZ3qfSd7k313TUa6/u+G+sVQLHEnAEj2jc/laJ6AM2+nGu2a2JNCtKqwBQ==" src="/assets/panel/js/main-9fd837b04c4042cd.js"></script>
+            <script integrity="sha512-nDJ9xcZZQgVCNmEZRnhzqjIdvK0wlRjN5jrjSUWRSIiIvyEO7xS9zTqS2En3nyoEYuAVkm3WYExv/QanfGPWmg==" src="/assets/panel/js/helper-9c327dc5c6594205.js"></script>
+            <script integrity="sha512-m0k/eLgY9QlskkYMuZq9eJ4sUN7DdXtCYagzC9+dAvoHgx0Rv2klF76/ULFPpGIsLeVUS8LLXOqLCEJgfqmBhA==" src="/assets/panel/js/panel-9b493f78b818f509.js"></script>
+            <link rel="stylesheet" integrity="sha512-xwXbw/Bxlzv55PiDFBMnHU//2JKWNMa1DFJowLAtYuT6xdiz+oYdhRWDoA944WVRMQpwm0VtSyANYthjOfuPcQ==" href="/assets/panel/css/aternos-c705dbc3f071973b.css"/>
+            <link rel="stylesheet" integrity="sha512-GVhknkaOiPr7lhrwv9Q4YDj4pj9Rdwaao0PlR50CZgtqREqt2FQqosFmaWwOLctw8fddZ0tcJJqmmrUn6Mxjqg==" href="/assets/panel/css/dist/panel/aternos-1958649e468e88fa.css"/>
+    
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-70M94GH0FD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-70M94GH0FD');
+    </script>
+            <script src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" data-site-id="6051eb8e337bfd28970d5989" data-mode="scan" async></script></head>
+<body class="default" id="theme-switch">
+<div class="alert-wrapper">
+    <div class="alert-container"></div>
+</div>
+<div class="body">
+    <header class="header">
+    <div class="header-start">
+        <script>
+            const SUPPORT_BASE = "https://support.aternos.org/hc/";
+            const SUPPORT_ARTICLES = {"countdown":360026950972,"uploadworld":360027235751,"connect":360026805072,"size":360035144691,"adblock":360034748092,"email":360039498492,"pending":360041686352,"domains":360044623491,"deprecated":360033339752,"backups":360044837012,"suggest":360052255311,"world-force-upgrade":360029351312,"world-optimize":360055516791,"retention":360030845111,"options":360030513552,"reinstall":360027235851,"resource-packs":5013255309085,"gamemode":360038363032,"unable-to-connect":360030511372,"starting":360027235631,"queue":360026950812,"cheats":360033279492,"cracked":360027235691,"unban":360026950852,"log":360027091471,"invalid-session":360030845231,"datapacks":360044777411,"addons":360042095232,"delete-player":360041630952,"plugins":360026950892,"mods":360027235871,"modpacks":4409967265425,"download-world":360027235711,"world-safe":360026950912,"access":360026950952,"suggest-mods-plugins":360052255311,"suggest-modpacks":360026950872,"ftp":360027235831,"close":360026951012,"snapshots":9168222529053,"automatic-updates":11750051573277};
+        </script>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <a href="/servers/" class="logo">
+            <img src="/panel/img/logo-white.svg" alt="Aternos Logo"/>
+        </a>
+        <div class="help desktop">
+            <div class="btn-help">
+                <button title="Help" class="btn btn-main" onclick="openSupport()"><i class="fas fa-question-circle"></i><span>Help</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="header-center">
+                            <div class="header-link-exaroton">
+                <a class="header-link-exaroton-link" href="https://exaroton.com/:en/?utm_source=aternos&utm_medium=website&utm_campaign=header-black&utm_content=desktop" target="_blank">
+                    <div class="header-exaroton-link-columns">
+                        <div class="header-exaroton-link-left">
+                            <div class="background">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 646.2 646.1" style="enable-background:new 0 0 646.2 646.1;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:#19BA19;}
+</style>
+                                    <g>
+                                        <path class="st0" d="M639.1,236.3c9.3-9.3,9.3-24.4,0-33.8L443.6,7c-9.3-9.3-24.4-9.3-33.8,0l-69.9,69.9c-9.3,9.3-24.4,9.3-33.8,0
+		L236.2,7c-9.3-9.3-24.4-9.3-33.8,0L7,202.5c-9.3,9.3-9.3,24.4,0,33.8l69.9,69.9c9.3,9.3,9.3,24.4,0,33.8L7,409.9
+		c-9.3,9.3-9.3,24.4,0,33.8l195.5,195.5c9.3,9.3,24.4,9.3,33.8,0l69.9-69.9c9.3-9.3,24.4-9.3,33.8,0l69.9,69.9
+		c9.3,9.3,24.4,9.3,33.8,0l195.5-195.5c9.3-9.3,9.3-24.4,0-33.8L569.3,340c-9.3-9.3-9.3-24.4,0-33.8L639.1,236.3z M497.9,361.3
+		c0,75-61.4,136.4-136.4,136.4h-76.7c-75,0-136.4-61.4-136.4-136.4v-76.7c0-75,61.4-136.4,136.4-136.4h76.7
+		c75,0,136.4,61.4,136.4,136.4V361.3z"></path>
+                                    </g>
+</svg>
+                            </div>
+                            <div class="header-exaroton-link-logo">
+                                <img src="/panel/img/exaroton.svg" />
+
+                                <div class="header-exaroton-link-by">
+                                    by Aternos                                </div>
+                            </div>
+                        </div>
+                        <div class="header-exaroton-link-right">
+                            <div class="header-exaroton-link-text-main">
+                                Only pay to play.                            </div>
+                            <div class="header-exaroton-link-text-sub">
+                                With our high-end on demand game servers.                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </div>
+    <div class="header-right">
+        <div class="help mobile">
+            <div class="btn-help">
+                <button title="Help" class="btn btn-main" onclick="openSupport()"><i class="fas fa-question-circle"></i></button>
+            </div>
+        </div>
+        <div class="account-navigation">
+            <a href="/servers/" class="item" title="Servers">
+                <i class="fas fa-server"></i> Servers            </a>
+            <a href="/account/" class="item" title="Account">
+                                    <i class="fas fa-user-cog"></i>
+                    <span>
+                    Account                                        </span>
+                            </a>
+        </div>
+        <div class="user">
+            <div class="usertext">
+                <div class="username">
+                    <a href="/account/" title="Account">
+                        P_A_R_T_H_2_0_0_7                                            </a>
+                </div>
+                <div class="userlinks">
+                                        <span class="js-darkmode-toggle">
+                    <i class="fas fa-sun"></i>
+                </span>
+                    <span title="Logout" class="logout"><i
+                                class="fas fa-sign-out"></i> Logout</span>
+                </div>
+            </div>
+            <div class="usericon">
+                <a href="/account/" id="userdropdown-toggle" title="Account">
+                    <i class="fas fa-user-circle desktop-icon"></i>
+                    <i class="fas fa-ellipsis-h mobile-icon"></i>
+                </a>
+            </div>
+            <div class="userdropdown" style="display: none;">
+                                                <a href="/servers/" class="item">
+                    <i class="fas fa-server"></i> Servers                </a>
+                                                <a href="/account/" class="item">
+                                            <i class="fas fa-user-cog"></i> Account                                    </a>
+                <a class="logout">
+                    <i class="fas fa-sign-out"></i> Logout                </a>
+                <a class="dropdown-darkmode-toggle js-darkmode-toggle">
+                    <i class="fas fa-sun"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>    <main class="main">
+        <div class="main-content">
+        <div id="placement-takeover" class="responsive-leaderboard responsive-leaderboard-large"></div>
+<script>
+    window.top.__vm_add = window.top.__vm_add || [];
+    (function (success) {
+        if (window.document.readyState !== "loading") {
+            success();
+        } else {
+            window.document.addEventListener("DOMContentLoaded", function () {
+                success();
+            });
+        }
+    })(function () {
+        let placement = document.createElement("div");
+        placement.setAttribute("class", "vm-placement");
+        if (window.innerWidth > 1000) {
+            //load desktop placement
+            placement.setAttribute("data-id", "6052322fe8fdeb39324f49c0");
+            placement.setAttribute("data-display-type", "hybrid-banner");
+            document.querySelector("#placement-takeover").appendChild(placement);
+            window.top.__vm_add.push(placement);
+        }
+    });
+</script>        <div class="main-content-wrapper">
+        <section class="content">
+            <div class="page-content page-servers">
+                
+<div class="servers-container">
+    <div class="headline-holder">
+        <h1>Servers</h1>
+    </div>
+
+    <div class="list-action">
+        <div class="server-action">
+            <button title="Edit"
+                    class="btn btn-invisible btn-notext js-servers-edit btn-edit-servers">
+                <i class="fas fa-pencil-alt"></i>
+            </button>
+            <a title="Create a server" class="btn btn-main btn-huge btn-create-server-huge"
+               href="/create/">
+                <i class="fas fa-plus"></i>Create a server            </a>
+            <a title="Create a server" class="btn btn-main btn-create-server-small"
+               href="/create/">
+                <i class="fas fa-plus"></i>Create            </a>
+        </div>
+        <div class="servercardlist">                <div class="servercard offline"
+                     data-id="hbaby19iJNorE3jY" title="Mini_Games2023">
+                    <div class="server-body" data-id="hbaby19iJNorE3jY">
+                        <div class="server-infos">
+                            <div class="server-title">
+                                <div class="server-name">
+                                    Mini_Games2023                                </div>
+                            </div>
+                            <div class="server-details">
+                                <div class="server-id">
+                                    #hbaby19iJNorE3jY                                </div>
+                                                                    <div class="server-detail server-software">
+                                        <i class="fas fa-cog"></i> <span
+                                                class="server-software-name">PaperMC 1.19.4 (550)</span>
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="server-icon statusicon">
+                            <i class="fas fa-stop-circle"></i>
+                            <div class="statusplayerbadge"
+                                 title="Players">0/10</div>
+                        </div>
+                    </div>
+                    <div class="server-remove server-delete btn btn-notext btn-danger">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                            <div class="servercard offline"
+                     data-id="E6ZigFE41nY6O2xE" title="P_A_R_T_H_2_0_0_7">
+                    <div class="server-body" data-id="E6ZigFE41nY6O2xE">
+                        <div class="server-infos">
+                            <div class="server-title">
+                                <div class="server-name">
+                                    P_A_R_T_H_2_0_0_7                                </div>
+                            </div>
+                            <div class="server-details">
+                                <div class="server-id">
+                                    #E6ZigFE41nY6O2xE                                </div>
+                                                                    <div class="server-detail server-software">
+                                        <i class="fas fa-cog"></i> <span
+                                                class="server-software-name">PaperMC 1.19.4 (550)</span>
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="server-icon statusicon">
+                            <i class="fas fa-stop-circle"></i>
+                            <div class="statusplayerbadge"
+                                 title="Players">0/10</div>
+                        </div>
+                    </div>
+                    <div class="server-remove server-delete btn btn-notext btn-danger">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                            <div class="servercard offline"
+                     data-id="GfuXprGkFkY7Z2lE" title="P_A_R_T_H_2_0_0_ZyM6">
+                    <div class="server-body" data-id="GfuXprGkFkY7Z2lE">
+                        <div class="server-infos">
+                            <div class="server-title">
+                                <div class="server-name">
+                                    P_A_R_T_H_2_0_0_ZyM6                                </div>
+                            </div>
+                            <div class="server-details">
+                                <div class="server-id">
+                                    #GfuXprGkFkY7Z2lE                                </div>
+                                                                    <div class="server-detail server-software">
+                                        <i class="fas fa-cog"></i> <span
+                                                class="server-software-name">PaperMC 1.19.4 (550)</span>
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="server-icon statusicon">
+                            <i class="fas fa-stop-circle"></i>
+                            <div class="statusplayerbadge"
+                                 title="Players">0/20</div>
+                        </div>
+                    </div>
+                    <div class="server-remove server-delete btn btn-notext btn-danger">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                                                                                        <div class="servercard offline"
+                         title="IChooseyouu"
+                         data-permission="1RYNeBDnwaI1UaK7">
+                        <div class="server-body" data-id="uQBmvmQ8FAnanBir">
+                            <div class="server-infos">
+                                <div class="server-title">
+                                    <div class="server-name">
+                                        IChooseyouu                                    </div>
+                                    <div class="server-by-user">
+                                        by Phycho010                                    </div>
+                                </div>
+                                <div class="server-details">
+                                    <div class="server-id">
+                                        #uQBmvmQ8FAnanBir                                    </div>
+                                                                            <div class="server-detail server-software">
+                                            <i class="fas fa-cog"></i> <span
+                                                    class="server-software-name">Spigot 1.20 (3831)</span>
+                                        </div>
+                                                                    </div>
+                            </div>
+                            <div class="server-icon statusicon">
+                                <i class="fas fa-stop-circle"></i>
+                                <div class="statusplayerbadge"
+                                     title="Players">0/50</div>
+                            </div>
+                        </div>
+                        <a class="server-remove access-remove btn btn-notext btn-danger">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                                                                            <div class="servercard offline"
+                         title="HeartFunSmp"
+                         data-permission="Ksmo1K2GVbOeWobt">
+                        <div class="server-body" data-id="rk7rLdTohA51wtAD">
+                            <div class="server-infos">
+                                <div class="server-title">
+                                    <div class="server-name">
+                                        HeartFunSmp                                    </div>
+                                    <div class="server-by-user">
+                                        by helping_girl                                    </div>
+                                </div>
+                                <div class="server-details">
+                                    <div class="server-id">
+                                        #rk7rLdTohA51wtAD                                    </div>
+                                                                            <div class="server-detail server-software">
+                                            <i class="fas fa-cog"></i> <span
+                                                    class="server-software-name">PaperMC 1.19.4 (550)</span>
+                                        </div>
+                                                                    </div>
+                            </div>
+                            <div class="server-icon statusicon">
+                                <i class="fas fa-stop-circle"></i>
+                                <div class="statusplayerbadge"
+                                     title="Players">0/20</div>
+                            </div>
+                        </div>
+                        <a class="server-remove access-remove btn btn-notext btn-danger">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                                                                            <div class="servercard offline"
+                         title="egohurt"
+                         data-permission="LXYxXudE5EXr1Juv">
+                        <div class="server-body" data-id="h6YY93dGYGu24FJ5">
+                            <div class="server-infos">
+                                <div class="server-title">
+                                    <div class="server-name">
+                                        egohurt                                    </div>
+                                    <div class="server-by-user">
+                                        by egohurt                                    </div>
+                                </div>
+                                <div class="server-details">
+                                    <div class="server-id">
+                                        #h6YY93dGYGu24FJ5                                    </div>
+                                                                            <div class="server-detail server-software">
+                                            <i class="fas fa-cog"></i> <span
+                                                    class="server-software-name">PaperMC 1.20.1 (82)</span>
+                                        </div>
+                                                                    </div>
+                            </div>
+                            <div class="server-icon statusicon">
+                                <i class="fas fa-stop-circle"></i>
+                                <div class="statusplayerbadge"
+                                     title="Players">0/10</div>
+                            </div>
+                        </div>
+                        <a class="server-remove access-remove btn btn-notext btn-danger">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                                                                            <div class="servercard offline"
+                         title="AMTS2"
+                         data-permission="nZbHFvrIY8dizR3P">
+                        <div class="server-body" data-id="EWtSRSTt4VQ2huHo">
+                            <div class="server-infos">
+                                <div class="server-title">
+                                    <div class="server-name">
+                                        AMTS2                                    </div>
+                                    <div class="server-by-user">
+                                        by Unknown82625                                    </div>
+                                </div>
+                                <div class="server-details">
+                                    <div class="server-id">
+                                        #EWtSRSTt4VQ2huHo                                    </div>
+                                                                            <div class="server-detail server-software">
+                                            <i class="fas fa-cog"></i> <span
+                                                    class="server-software-name">PaperMC 1.20.1 (82)</span>
+                                        </div>
+                                                                    </div>
+                            </div>
+                            <div class="server-icon statusicon">
+                                <i class="fas fa-stop-circle"></i>
+                                <div class="statusplayerbadge"
+                                     title="Players">0/5</div>
+                            </div>
+                        </div>
+                        <a class="server-remove access-remove btn btn-notext btn-danger">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                            </div>
+    </div>
+
+    <div class="servers-import-button">
+            </div>
+</div>
+<script integrity="sha512-aQRgg1LrqkiN/jnQSrfajeCAcDZd+n3PTmL1EG3OfkPQ9kz02jtPkzCW75IMMGDUKlDKocWaPiKYS7gn8Hfzpg==" src="/assets/panel/js/dist/servers-6904608352ebaa48.js"></script>            </div>
+            <div class="responsive-leaderboard mobile-full-width ad-dfp">
+    <div class="ad-label-wrapper">
+    <div class="ad-label">Advertisement</div>
+</div>    <div id="placement-account-bottom"></div>
+    <script>
+        window.top.__vm_add = window.top.__vm_add || [];
+        (function (success) {
+            if (window.document.readyState !== "loading") {
+                success();
+            } else {
+                window.document.addEventListener("DOMContentLoaded", function () {
+                    success();
+                });
+            }
+        })(function () {
+            let placement = document.createElement("div");
+            placement.setAttribute("class", "vm-placement");
+            placement.setAttribute("data-id", "60523220337bfd28970d59a8");
+            document.querySelector("#placement-account-bottom").appendChild(placement);
+            window.top.__vm_add.push(placement);
+        });
+    </script>
+</div>            
+    <div class="help-center-articles">
+                    <div class="help-center-article">
+                <h4 class="help-center-article-title">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360026805072-Connect-to-your-server" target="_blank">
+                        <i class="fas fa-question-circle"></i>
+                        Connect to your server                    </a>
+                </h4>
+                <div class="help-center-article-body">
+                    <p>To connect to your server, copy the server address and enter it in your Minecraft client, as a new server or with "Direct Connect". You can find the server address on the <a href="https://aternos.org/server/" target="_blank" rel="nofollow noopener">server page</a>.</p>
+<p><img src="https://support.aternos.org/hc/article_attachments/4405655644433/blobid0.png" alt="blobid0.png"></p>
+<p>This address includes your server port if "Cracked" is enabled in the options. Read more details about cracked launchers, especially TLauncher, <a href="https://support.aternos.org/hc/en-us/articles/360050784692" target="_blank" rel="noopener">here.</a></p>
+<p>If this doesn't work, please continue reading this guide, otherwise: Have fun!</p>
+<h2>Is your server online?</h2>
+<p>Please make sure that your server is online if you have problems ...</p>                </div>
+                <div class="help-center-article-buttons">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360026805072-Connect-to-your-server" class="btn btn-light btn-small" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Read more
+                    </a>
+                </div>
+            </div>
+                            <div id="mobile-takeover"></div>
+<script>
+    window.top.__vm_add = window.top.__vm_add || [];
+    (function (success) {
+        if (window.document.readyState !== "loading") {
+            success();
+        } else {
+            window.document.addEventListener("DOMContentLoaded", function () {
+                success();
+            });
+        }
+    })(function () {
+        if (window.innerWidth < 1000) {
+            var placement = document.createElement("div");
+            placement.setAttribute("class", "vm-placement");
+            placement.setAttribute("data-id", "6464bad1b13b6d05092fa920");
+            placement.setAttribute("data-display-type", "hybrid-banner");
+            document.querySelector("#mobile-takeover").appendChild(placement);
+            window.top.__vm_add.push(placement);
+        } else {
+            document.querySelector("#mobile-takeover").style.display = "none";
+        }
+    });
+</script>                                <div class="help-center-article">
+                <h4 class="help-center-article-title">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360027235751-Upload-a-world" target="_blank">
+                        <i class="fas fa-question-circle"></i>
+                        Upload a world                    </a>
+                </h4>
+                <div class="help-center-article-body">
+                    <p></p>
+<p>You can upload a world on the "worlds" page: <a href="https://aternos.org/worlds/" target="_blank" rel="nofollow noopener">https://aternos.org/worlds/</a>&nbsp;</p>
+<p>Just select a world and click on "Upload". After that select a zip archive or folder and it will be automatically uploaded to your server. This is only possible while your server is offline.</p>
+<p>World uploads are limited to 1 GB for technical reasons. If your world is bigger than that, you could try to decrease your world's size by removing unused chunks using a program like <a href="https://github.com/Querz/mcaselector/releases" target="_blank" rel="noopener">MCASelector</a>.</p>                </div>
+                <div class="help-center-article-buttons">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360027235751-Upload-a-world" class="btn btn-light btn-small" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Read more
+                    </a>
+                </div>
+            </div>
+                                <div class="help-center-article">
+                <h4 class="help-center-article-title">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360026950952-Share-access" target="_blank">
+                        <i class="fas fa-question-circle"></i>
+                        Share access                    </a>
+                </h4>
+                <div class="help-center-article-body">
+                    <p>On Aternos you can share your server with your friends without giving them direct access to your account. This feature is called "Access", you can find it in the panel in the server navigation: <a href="https://aternos.org/access/" target="_blank" rel="noopener">aternos.org/access/</a></p>
+<h2>Grant a friend access to your server</h2>
+<p>Enter your friend's <strong>Aternos</strong> <strong>username</strong> into the text box on the access settings page and click the plus sign.</p>
+<p>If your friend does not have an Aternos account yet they need to create one here: <a href="https://aternos.org/signup/" target="_blank" rel="noopener">aternos.org/signup/</a>&nbsp;</p>
+<p><img src="https://support.aternos.org/hc/article_attachments/360060030912/mceclip1.png" alt="mceclip1.png"></p>
+<p>You'll see a list of permissions which ...</p>                </div>
+                <div class="help-center-article-buttons">
+                    <a href="https://support.aternos.org/hc/en-us/articles/360026950952-Share-access" class="btn btn-light btn-small" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Read more
+                    </a>
+                </div>
+            </div>
+                        </div>
+            
+<footer>
+    <nav class="social">
+        <ul>
+                            <li>
+                    <a href="https://twitter.com/Aternos" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://facebook.com/Aternos" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://youtube.com/user/AternosORG" title="Youtube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://instagram.com/Aternos" title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://reddit.com/r/aternos" title="Reddit" target="_blank">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://discord.aternos.org" title="Discord" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="ts3server://ts.aternos.org" title="Teamspeak" target="_blank">
+                        <i class="fab fa-teamspeak"></i>
+                    </a>
+                </li>
+                            <li>
+                    <a href="https://github.com/aternosorg" title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                    </ul>
+    </nav>
+    <div class="company">
+        <ul>
+            <li><a target="_blank" rel="noopener" href="https://aternos.gmbh/en/">Company</a></li>
+            <li><a target="_blank" rel="noopener" href="https://aternos.gmbh/en/imprint">Imprint</a></li>
+            <li><a target="_blank" rel="noopener" href="https://aternos.gmbh/en/aternos/terms">Terms of service</a></li>
+            <li><a target="_blank" rel="noopener" href="https://aternos.gmbh/en/aternos/privacy">Privacy Policy</a></li>
+        </ul>
+
+        <div class="copyright">&copy; 2013-2023 Aternos GmbH</div>
+    </div>
+</footer>        </section>
+        </div>
+        </div>
+    </main>
+</div>
+<div id="rich-media-placement"></div>
+<script>
+    window.top.__vm_add = window.top.__vm_add || [];
+    (function(success) {
+        if(window.document.readyState !== "loading"){
+            success();
+        } else {
+            window.document.addEventListener("DOMContentLoaded", function(){
+                success();
+            });
+        }
+    })(function () {
+        let placement = document.createElement("div");
+        placement.setAttribute("class", "vm-placement");
+        placement.setAttribute("data-id", "6054dfb5e8fdeb39324f4a4a");
+        document.querySelector("#rich-media-placement").appendChild(placement);
+        window.top.__vm_add.push(placement);
+    });
+</script><div class="compatibility-warning" id="compatibility-warning" style="display: none;">
+    <div class="icon">
+        <i class="fas fa-hexagon-exclamation"></i>
+    </div>
+    <div class="text">
+        <div class="text-is-incompatible">Your browser is not supported. Most features will not work as expected. Please update your browser or install a different browser.</div>
+        <div class="text-will-be-incompatible">Your browser is outdated and will not be supported in the future. Some features might not work as expected. Please update your browser or install a different browser.</div>
+    </div>
+    <div class="actions">
+        <button class="btn btn-light dismiss" id="compatibility-warning-dismiss">
+            <i class="fas fa-check"></i>
+            Okay        </button>
+    </div>
+</div>
+<script integrity="sha512-zh7H6iXT+VXtyz1rByBTtuzgGUQax5QVc8hac7eNfohe1SA4OOILR87AUtkbhsnMnGYNupYmY9ztR0TsR6h/nw==" src="/assets/panel/js/compatibility-ce1ec7ea25d3f955.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7e7a1eed09ef31ee","token":"d39a6a9d6fdb4c9dbcc7a9b778eb5c94","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
