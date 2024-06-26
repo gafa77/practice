@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylish Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default margin and padding */
+body, h1, h2, p, table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+}
+
+.styled-table tbody td {
+  padding: 12px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+</style>
+<body>
+
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>jane@example.com</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+
+</body>
+</html>
